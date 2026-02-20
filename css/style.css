@@ -2195,17 +2195,16 @@ body.dock-layout {
 }
 
 .dock-social-links {
-  position: sticky;
-  bottom: 0;
   display: flex;
-  gap: .55em;
-  margin: 0 0 .8em .2em;
+  gap: .75em;
+  justify-content: center;
+  margin: 0 auto .9em;
   padding-bottom: .3em;
 }
 
 .dock-social-links a {
-  width: 44px;
-  height: 44px;
+  width: 54px;
+  height: 54px;
   border-radius: 999px;
   display: inline-flex;
   align-items: center;
@@ -2234,12 +2233,18 @@ body.dock-layout {
 /* ===== Main HTML dock layout override (requested) ===== */
 :root {
   --rail-width: 220px;
-  --rail-gap: 42px;
+  --rail-gap: 56px;
+  --neon-green: #39ff14;
 }
 
 body.dock-layout {
   background: #060606;
   color: #2d332d;
+}
+
+body.dock-layout ::selection {
+  background: rgba(57, 255, 20, 0.35);
+  color: #d3ffd0;
 }
 
 .dock {
@@ -2254,7 +2259,10 @@ body.dock-layout {
 }
 
 .dock-left { left: var(--rail-gap); }
-.dock-right { right: var(--rail-gap); }
+.dock-right {
+  right: var(--rail-gap);
+  align-items: center;
+}
 
 .downfeed {
   margin-left: calc(var(--rail-width) + (var(--rail-gap) * 2));
@@ -2277,15 +2285,15 @@ body.dock-layout {
 .dock-right h3:hover,
 .dock-right p:hover,
 .dock-right .form_settings .submit:hover {
-  color: #8fff66;
-  text-shadow: 0 0 7px rgba(143, 255, 102, 0.55);
+  color: var(--neon-green);
+  text-shadow: 0 0 8px rgba(57, 255, 20, 0.68);
 }
 
 .music-tile {
-  width: 25%;
-  min-width: 220px;
-  max-width: 300px;
-  align-items: flex-start;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  align-items: stretch;
 }
 
 .drop-slot.giant {
@@ -2293,34 +2301,39 @@ body.dock-layout {
 }
 
 .profile-code-card {
-  width: 86px;
-  height: 86px;
-  border-radius: 10px;
-  background: #fff;
+  width: 170px;
+  min-height: 212px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: .2em 0 .8em .2em;
+  margin: .25em auto .9em;
   overflow: hidden;
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,.12);
+  border-radius: 12px;
+  padding: 6px;
 }
 
 .profile-code-card img {
-  width: 78%;
-  height: 78%;
+  width: 100%;
+  height: auto;
   object-fit: contain;
+  display: block;
 }
 
 .dock-right h3 {
-  margin: 0 0 .3em .15em;
+  margin: 0 0 .45em;
   font-size: 1.1rem;
   text-transform: uppercase;
   letter-spacing: .12em;
+  text-align: center;
 }
 
 .dock-email {
-  font-size: 1rem;
-  line-height: 1.3;
-  margin: 0 0 .35em .2em;
+  font-size: calc(1rem + 3px);
+  line-height: 1.35;
+  margin: 0 0 .35em;
+  text-align: center;
 }
 
 .dock-right .form_settings {
