@@ -1,11 +1,11 @@
-$("input[type$='submit']").on('click', function(e) {
+$('#contacts .submit').on('click', function(e) {
     e.preventDefault();
 	history.replaceState(undefined, undefined, "#")
 	
     $.ajax({
         type: 'post',
         url: './php/form.php',
-        data: $('form').serialize(),
+        data: $('#contacts').serialize(),
         success: function (result) {
 			$('#contacts').html("");
             $('#contacts').append(result);
