@@ -1,25 +1,10 @@
 $('#contacts').on('submit', function (e) {
-    e.preventDefault();
-    window.location.href = 'mailto:info@strettymusic.com?subject=' + encodeURIComponent('Stetty inquiry');
-});
-$('#contacts .submit').on('click', function(e) {
-    e.preventDefault();
-	history.replaceState(undefined, undefined, "#")
-	
-    $.ajax({
-        type: 'post',
-        url: './php/form.php',
-        data: $('#contacts').serialize(),
-        success: function (result) {
-			$('#contacts').html("");
-            $('#contacts').append(result);
-         }
-    });
- });
- 
-// If contact submission has errors, refresh page with hastag when button clicked to resubmit.
-// When page refreshed, remove the hastag from the address.
-$(window).on('hashchange',function(e){ 
-    window.location.reload(true); 
-	history.replaceState ("", document.title, e.originalEvent.oldURL);
+  e.preventDefault();
+
+  var recipient = 'info@strettymusic.com';
+  var subject = encodeURIComponent('Stretty website contact');
+  var body = encodeURIComponent('Hi Stretty,');
+  var mailtoUrl = 'mailto:' + recipient + '?subject=' + subject + '&body=' + body;
+
+  window.location.href = mailtoUrl;
 });
