@@ -2230,3 +2230,124 @@ body.dock-layout {
   background: #ff6a00;
   border-color: rgba(255,165,120,.6);
 }
+
+/* ===== Main HTML dock layout override (requested) ===== */
+:root {
+  --rail-width: 220px;
+  --rail-gap: 42px;
+}
+
+body.dock-layout {
+  background: #060606;
+  color: #2d332d;
+}
+
+.dock {
+  width: var(--rail-width);
+  top: 0;
+  padding: 1.2em .8em;
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
+  justify-content: center;
+  background: rgba(8, 8, 8, 0.94);
+}
+
+.dock-left { left: var(--rail-gap); }
+.dock-right { right: var(--rail-gap); }
+
+.downfeed {
+  margin-left: calc(var(--rail-width) + (var(--rail-gap) * 2));
+  margin-right: calc(var(--rail-width) + (var(--rail-gap) * 2));
+}
+
+.dock a,
+.feed-block h2,
+.drop-slot,
+.dock-right h3,
+.dock-right p,
+.dock-right .form_settings .submit {
+  color: #2f352f;
+  transition: color .22s ease, text-shadow .22s ease, border-color .22s ease;
+}
+
+.dock a:hover,
+.feed-block h2:hover,
+.drop-slot:hover,
+.dock-right h3:hover,
+.dock-right p:hover,
+.dock-right .form_settings .submit:hover {
+  color: #8fff66;
+  text-shadow: 0 0 7px rgba(143, 255, 102, 0.55);
+}
+
+.music-tile {
+  width: 25%;
+  min-width: 220px;
+  max-width: 300px;
+  align-items: flex-start;
+}
+
+.drop-slot.giant {
+  min-height: 1000px;
+}
+
+.profile-code-card {
+  width: 86px;
+  height: 86px;
+  border-radius: 10px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: .2em 0 .8em .2em;
+  overflow: hidden;
+}
+
+.profile-code-card img {
+  width: 78%;
+  height: 78%;
+  object-fit: contain;
+}
+
+.dock-right h3 {
+  margin: 0 0 .3em .15em;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+}
+
+.dock-email {
+  font-size: 1rem;
+  line-height: 1.3;
+  margin: 0 0 .35em .2em;
+}
+
+.dock-right .form_settings {
+  background: transparent;
+  padding: 0;
+  margin-top: .6em;
+}
+
+.dock-right .form_settings .submit {
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: .16em;
+}
+
+@media screen and (max-width: 1100px) {
+  .dock-left,
+  .dock-right {
+    left: 0;
+    right: 0;
+  }
+
+  .downfeed {
+    margin: 0;
+  }
+
+  .music-tile {
+    width: 100%;
+    max-width: 100%;
+  }
+}
