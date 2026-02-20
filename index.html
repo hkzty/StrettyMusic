@@ -16,6 +16,9 @@
     <a href="#music">Music</a>
     <a href="#to-come-1">To come</a>
     <a href="#to-come-2">To come</a>
+        <a href="#music">Music</a>
+    <a href="#tours">Tours</a>
+    <a href="#merch">Merch</a>
   </aside>
 
   <main class="downfeed" id="downfeed">
@@ -40,6 +43,24 @@
       <h2>To come</h2>
       <div class="drop-slot">Drop Zone // To come</div>
       <div class="drop-slot giant">Infinite drop zone // To come</div>
+      <div class="drop-slot embed-slot">
+        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/artist/4yQchxxguwc9PXmCVqb9Bm?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+      <div class="drop-slot">
+        <a class="profile-link" href="https://open.spotify.com/artist/4yQchxxguwc9PXmCVqb9Bm?si=wh4V-2xmT-qUuYvVkPX5zw" target="_blank" rel="noopener noreferrer">Open full Spotify profile</a>
+      </div>
+    </section>
+
+    <section id="tours" class="feed-block">
+      <h2>Tours</h2>
+      <div class="drop-slot">Drop Zone // Tour embeds and image links go here</div>
+      <div class="drop-slot tall"></div>
+    </section>
+
+    <section id="merch" class="feed-block">
+      <h2>Merch</h2>
+      <div class="drop-slot">Drop Zone // Merch embeds and image links go here</div>
+      <div class="drop-slot tall"></div>
     </section>
 
     <section class="feed-block">
@@ -63,12 +84,19 @@
       <a href="#" aria-label="SoundCloud profile placeholder" class="soundcloud-placeholder">SC</a>
     </div>
 
+    <h3>Contact Dock</h3>
     <p>info@strettymusic.com</p>
     <p>hkukic.2015@gmail.com</p>
 
     <form id="contacts" name="htmlform" method="post">
       <div class="form_settings simple-send">
         <div><input id="send-mail" class="submit" type="submit" name="contact_submitted" value="send" /></div>
+      <div class="form_settings">
+        <input class="name" type="text" name="name" placeholder="Name" required />
+        <input class="email" type="email" name="email" placeholder="Email" required />
+        <input class="subject" type="text" name="subject" placeholder="Subject" required />
+        <textarea class="message" rows="4" cols="50" name="message" placeholder="Message" required></textarea>
+        <div><input class="submit" type="submit" name="contact_submitted" value="send" /></div>
       </div>
     </form>
   </aside>
