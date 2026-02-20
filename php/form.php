@@ -2,7 +2,7 @@
 if(isset($_POST['email'])) {
 	
 	//replace your email here
-	$email_to = "jane@doe.com";
+	$email_to = "info@strettymusic.com";
 	
 	
 	function died($error) {
@@ -65,12 +65,12 @@ if(isset($_POST['email'])) {
 $headers = 'From: ' .$email_from. "\r\n"; 
 $headers .= 'Reply-To: ' .$email_from. "\r\n";
 'X-Mailer: PHP/' . phpversion();
-mail($email_to, $subject, $email_message, $headers)
+mail($email_to, $subject, $email_message, $headers);
 
 ?>
 <!-- place your own success html below -->
-<div class="center"><h2>Thanks for contacting us!</h2></div>
-<div class="center"><p>We will get back to you as soon as possible.</p></div>
+<div class="center"><h2>Thanks for contacting Stetty.</h2></div>
+<div class="center"><p>Your message was sent to info@strettymusic.com. We'll get back to you soon.</p></div>
 <?php
 }
 die();
