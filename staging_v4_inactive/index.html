@@ -21,13 +21,11 @@
   <main class="downfeed" id="downfeed">
     <section id="music" class="feed-block">
       <h2>Music</h2>
-      <div class="drop-slot embed-slot">
-        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5wiaIGjX8ht4vIxYHYHBqG?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-      </div>
-      <div class="drop-slot mini-slot-wrap">
-        <a class="mini-song-tile" href="https://open.spotify.com/track/5wiaIGjX8ht4vIxYHYHBqG?si=wh4V-2xmT-qUuYvVkPX5zw" target="_blank" rel="noopener noreferrer">
-          <span>Yung Goth Song</span>
-        </a>
+      <div class="drop-slot embed-slot song-row">
+        <div class="song-tile">
+          <h4>Yung Goth Song</h4>
+          <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5wiaIGjX8ht4vIxYHYHBqG?utm_source=generator" width="100%" height="176" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
       </div>
       <div class="drop-slot giant">Infinite drop zone // Music</div>
     </section>
@@ -65,12 +63,12 @@
       <a href="#" aria-label="SoundCloud profile placeholder" class="soundcloud-placeholder">SC</a>
     </div>
 
-        <p>info@strettymusic.com</p>
+    <p>info@strettymusic.com</p>
     <p>hkukic.2015@gmail.com</p>
 
     <form id="contacts" name="htmlform" method="post">
-      <div class="form_settings send-only">
-        <div><input class="submit" type="submit" name="contact_submitted" value="send" /></div>
+      <div class="form_settings simple-send">
+        <div><input id="send-mail" class="submit" type="submit" name="contact_submitted" value="send" /></div>
       </div>
     </form>
   </aside>
