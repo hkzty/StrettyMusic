@@ -2239,6 +2239,7 @@ body.dock-layout {
 body.dock-layout {
   background: #060606;
   color: var(--neon-green);
+  padding-top: 0;
 }
 
 body.dock-layout ::selection {
@@ -2249,11 +2250,11 @@ body.dock-layout ::selection {
 .dock {
   width: var(--rail-width);
   top: 0;
-  padding: 1.2em .8em;
+  padding: .35em .8em 1.2em;
   display: flex;
   flex-direction: column;
   gap: .5em;
-  justify-content: center;
+  justify-content: flex-start;
   background: rgba(8, 8, 8, 0.94);
 }
 
@@ -2266,6 +2267,7 @@ body.dock-layout ::selection {
 .downfeed {
   margin-left: calc(var(--rail-width) + (var(--rail-gap) * 2));
   margin-right: calc(var(--rail-width) + (var(--rail-gap) * 2));
+  margin-top: 0;
 }
 
 .dock a,
