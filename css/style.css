@@ -2245,6 +2245,9 @@ body.dock-layout {
 body.dock-layout {
   background: var(--surface-black);
   color: var(--highlight-white);
+  background: #060606;
+  color: var(--neon-green);
+  padding-top: 0;
 }
 
 body.dock-layout,
@@ -2279,12 +2282,14 @@ body.dock-layout ::selection {
 .dock {
   width: var(--rail-width);
   top: 0;
-  padding: 1.2em .8em;
+  padding: .35em .8em 1.2em;
   display: flex;
   flex-direction: column;
   gap: .5em;
   justify-content: center;
   background: var(--surface-black);
+  justify-content: flex-start;
+  background: rgba(8, 8, 8, 0.94);
 }
 
 .dock-left { left: var(--rail-gap); }
@@ -2297,6 +2302,7 @@ body.dock-layout ::selection {
   margin-left: calc(var(--rail-width) + (var(--rail-gap) * 2));
   margin-right: calc(var(--rail-width) + (var(--rail-gap) * 2));
   background: var(--surface-black);
+  margin-top: 0;
 }
 
 .dock a,
@@ -2322,6 +2328,8 @@ body.dock-layout ::selection {
 .dock-social-links a:hover {
   background: linear-gradient(180deg, rgba(69, 84, 69, 0.42), rgba(42, 58, 42, 0.35));
   box-shadow: 0 0 10px rgba(57,255,20,.22);
+  color: var(--neon-green);
+  transition: color .22s ease, text-shadow .22s ease, border-color .22s ease, box-shadow .22s ease;
 }
 
 .dock a:hover,
@@ -2374,6 +2382,13 @@ body.dock-layout ::selection {
 .song-row .song-tile {
   width: min(100%, 760px);
   margin-inline: auto;
+.dock-right .form_settings .submit:hover {
+  color: var(--neon-green);
+  text-shadow: 0 0 8px rgba(57, 255, 20, 0.68);
+  outline: 1px solid rgba(57, 255, 20, 0.9);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px rgba(57,255,20,.18), 0 0 14px rgba(57,255,20,.58);
+  border-radius: 6px;
 }
 
 .music-tile {
@@ -2399,21 +2414,20 @@ body.dock-layout ::selection {
   width: 170px;
   min-height: 212px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  margin: .25em auto .9em;
-  overflow: hidden;
-  background: #ffffff;
-  border: 1px solid rgba(0,0,0,.12);
-  border-radius: 12px;
-  padding: 6px;
+  align-items: center;
+  margin: .3em auto 1em;
 }
 
-.profile-code-card img {
-  width: 100%;
+.profile-code {
+  width: min(180px, 100%);
   height: auto;
-  object-fit: contain;
   display: block;
+  border-radius: 12px;
+}
+
+.dock-social-links {
+  margin: 0 auto .8em;
 }
 
 .dock-right h3 {
