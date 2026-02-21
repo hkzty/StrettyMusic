@@ -2239,13 +2239,9 @@ body.dock-layout {
 }
 
 body.dock-layout {
-  background: var(--surface-black);
-  color: var(--highlight-white);
-}
-
-body.dock-layout,
-body.dock-layout * {
-  color: var(--highlight-white);
+  background: #060606;
+  color: var(--neon-green);
+  padding-top: 0;
 }
 
 body.dock-layout ::selection {
@@ -2256,12 +2252,12 @@ body.dock-layout ::selection {
 .dock {
   width: var(--rail-width);
   top: 0;
-  padding: 1.2em .8em;
+  padding: .35em .8em 1.2em;
   display: flex;
   flex-direction: column;
   gap: .5em;
-  justify-content: center;
-  background: var(--surface-black);
+  justify-content: flex-start;
+  background: rgba(8, 8, 8, 0.94);
 }
 
 .dock-left { left: var(--rail-gap); }
@@ -2273,7 +2269,7 @@ body.dock-layout ::selection {
 .downfeed {
   margin-left: calc(var(--rail-width) + (var(--rail-gap) * 2));
   margin-right: calc(var(--rail-width) + (var(--rail-gap) * 2));
-  background: var(--surface-black);
+  margin-top: 0;
 }
 
 .dock a,
@@ -2281,23 +2277,8 @@ body.dock-layout ::selection {
 .dock-right h3,
 .dock-right p,
 .dock-right .form_settings .submit {
-  color: var(--highlight-white);
-  transition: color .22s ease, text-shadow .22s ease, border-color .22s ease, box-shadow .22s ease, background-color .22s ease;
-}
-
-.dock a {
-  border-left-color: rgba(255, 255, 255, 0.65);
-}
-
-.dock a:hover {
-  border-left-color: var(--neon-green);
-}
-
-.dock a:hover,
-.drop-slot:hover,
-.dock-social-links a:hover {
-  background: rgba(57, 255, 20, 0.08);
-  box-shadow: 0 0 10px rgba(57,255,20,.22);
+  color: var(--neon-green);
+  transition: color .22s ease, text-shadow .22s ease, border-color .22s ease, box-shadow .22s ease;
 }
 
 .dock a:hover,
@@ -2305,28 +2286,13 @@ body.dock-layout ::selection {
 .drop-slot:hover,
 .dock-right h3:hover,
 .dock-right p:hover,
-.dock-right .form_settings .submit:hover,
-.dock-social-links a:hover {
-  color: var(--highlight-white);
-  text-shadow: 0 0 6px rgba(255, 255, 255, 0.95), 0 0 12px rgba(57, 255, 20, 0.55);
-  outline: none;
+.dock-right .form_settings .submit:hover {
+  color: var(--neon-green);
+  text-shadow: 0 0 8px rgba(57, 255, 20, 0.68);
+  outline: 1px solid rgba(57, 255, 20, 0.9);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px rgba(57,255,20,.18), 0 0 14px rgba(57,255,20,.58);
   border-radius: 6px;
-}
-
-.feed-block h2 {
-  color: var(--highlight-white);
-  text-shadow: 0 0 8px rgba(255,255,255,.9), 0 0 16px rgba(57,255,20,.65);
-}
-
-.song-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.song-row .song-tile {
-  width: min(100%, 760px);
-  margin-inline: auto;
 }
 
 .music-tile {
@@ -2348,8 +2314,9 @@ body.dock-layout ::selection {
   min-height: 352px;
 }
 
-.profile-code-wrap {
-  width: 100%;
+.profile-code-card {
+  width: 170px;
+  min-height: 212px;
   display: flex;
   justify-content: center;
   align-items: center;
