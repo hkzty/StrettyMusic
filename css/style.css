@@ -2239,7 +2239,8 @@ body.dock-layout {
 
 body.dock-layout {
   background: #060606;
-  color: #2d332d;
+  color: var(--neon-green);
+  padding-top: 0;
 }
 
 body.dock-layout ::selection {
@@ -2250,11 +2251,11 @@ body.dock-layout ::selection {
 .dock {
   width: var(--rail-width);
   top: 0;
-  padding: 1.2em .8em;
+  padding: .35em .8em 1.2em;
   display: flex;
   flex-direction: column;
   gap: .5em;
-  justify-content: center;
+  justify-content: flex-start;
   background: rgba(8, 8, 8, 0.94);
 }
 
@@ -2267,6 +2268,7 @@ body.dock-layout ::selection {
 .downfeed {
   margin-left: calc(var(--rail-width) + (var(--rail-gap) * 2));
   margin-right: calc(var(--rail-width) + (var(--rail-gap) * 2));
+  margin-top: 0;
 }
 
 .dock a,
@@ -2275,8 +2277,8 @@ body.dock-layout ::selection {
 .dock-right h3,
 .dock-right p,
 .dock-right .form_settings .submit {
-  color: #2f352f;
-  transition: color .22s ease, text-shadow .22s ease, border-color .22s ease;
+  color: var(--neon-green);
+  transition: color .22s ease, text-shadow .22s ease, border-color .22s ease, box-shadow .22s ease;
 }
 
 .dock a:hover,
@@ -2287,6 +2289,10 @@ body.dock-layout ::selection {
 .dock-right .form_settings .submit:hover {
   color: var(--neon-green);
   text-shadow: 0 0 8px rgba(57, 255, 20, 0.68);
+  outline: 1px solid rgba(57, 255, 20, 0.9);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px rgba(57,255,20,.18), 0 0 14px rgba(57,255,20,.58);
+  border-radius: 6px;
 }
 
 .music-tile {
@@ -2298,6 +2304,14 @@ body.dock-layout ::selection {
 
 .drop-slot.giant {
   min-height: 1000px;
+}
+
+.song-row {
+  min-height: 420px;
+}
+
+.song-tile iframe {
+  min-height: 352px;
 }
 
 .profile-code-card {
