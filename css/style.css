@@ -2234,6 +2234,8 @@ body.dock-layout {
   --rail-width: 220px;
   --rail-gap: 56px;
   --neon-green: #39ff14;
+  --highlight-white: #ffffff;
+  --surface-black: #060606;
 }
 
 body.dock-layout {
@@ -2271,7 +2273,6 @@ body.dock-layout ::selection {
 }
 
 .dock a,
-.feed-block h2,
 .drop-slot,
 .dock-right h3,
 .dock-right p,
