@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Stretty Spotify profile code</title>
+  <desc id="desc">Profile icon above a Spotify code style bar pattern.</desc>
+  <rect width="800" height="1000" fill="#8a8a8a"/>
+  <circle cx="400" cy="400" r="345" fill="#3f3f41" stroke="#4a4a4c" stroke-width="4"/>
+
+  <g fill="none" stroke="#c7c7cb" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M270 540v-34c0-42 34-58 79-85 17-10 21-33 5-46-20-17-32-44-32-73 0-51 38-92 85-92s85 41 85 92c0 29-12 56-32 73-16 13-12 36 5 46 18 11 30 18 40 24"/>
+    <circle cx="500" cy="530" r="38"/>
+    <path d="M538 492v-86l47 27"/>
+  </g>
+
+  <g fill="#0a0a0a">
+    <circle cx="98" cy="895" r="58"/>
+  </g>
+  <g fill="none" stroke="#8f8f92" stroke-width="10" stroke-linecap="round">
+    <path d="M64 878c24-9 52-8 69 2"/>
+    <path d="M66 896c22-7 44-6 61 3"/>
+    <path d="M68 914c18-6 35-5 51 2"/>
+  </g>
+
+  <g fill="#050505">
+    <rect x="198" y="887" width="12" height="24" rx="6"/>
+    <rect x="220" y="860" width="12" height="78" rx="6"/>
+    <rect x="244" y="832" width="12" height="134" rx="6"/>
+    <rect x="267" y="860" width="12" height="78" rx="6"/>
+    <rect x="293" y="880" width="12" height="40" rx="6"/>
+    <rect x="318" y="867" width="12" height="66" rx="6"/>
+    <rect x="342" y="888" width="12" height="24" rx="6"/>
+    <rect x="365" y="866" width="12" height="68" rx="6"/>
+    <rect x="390" y="876" width="12" height="49" rx="6"/>
+    <rect x="414" y="867" width="12" height="67" rx="6"/>
+    <rect x="440" y="881" width="12" height="39" rx="6"/>
+    <rect x="463" y="840" width="12" height="122" rx="6"/>
+    <rect x="488" y="888" width="12" height="24" rx="6"/>
+    <rect x="511" y="874" width="12" height="52" rx="6"/>
+    <rect x="535" y="881" width="12" height="39" rx="6"/>
+    <rect x="559" y="889" width="12" height="23" rx="6"/>
+    <rect x="582" y="865" width="12" height="71" rx="6"/>
+    <rect x="606" y="875" width="12" height="53" rx="6"/>
+    <rect x="631" y="839" width="12" height="124" rx="6"/>
+    <rect x="655" y="874" width="12" height="54" rx="6"/>
+    <rect x="680" y="832" width="12" height="133" rx="6"/>
+    <rect x="704" y="860" width="12" height="78" rx="6"/>
+    <rect x="746" y="887" width="12" height="24" rx="6"/>
+  </g>
+</svg>

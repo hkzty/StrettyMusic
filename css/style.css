@@ -2318,21 +2318,20 @@ body.dock-layout ::selection {
   width: 170px;
   min-height: 212px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  margin: .25em auto .9em;
-  overflow: hidden;
-  background: #ffffff;
-  border: 1px solid rgba(0,0,0,.12);
-  border-radius: 12px;
-  padding: 6px;
+  align-items: center;
+  margin: .3em auto 1em;
 }
 
-.profile-code-card img {
-  width: 100%;
+.profile-code {
+  width: min(180px, 100%);
   height: auto;
-  object-fit: contain;
   display: block;
+  border-radius: 12px;
+}
+
+.dock-social-links {
+  margin: 0 auto .8em;
 }
 
 .dock-right h3 {
