@@ -220,3 +220,4 @@ const topbar = document.getElementById('topbar');
       formStatus.textContent = 'Message validated. Hook this form to Formspree, Netlify Forms, EmailJS, or your backend to make submissions live.';
       contactForm.reset();
     });
+    
