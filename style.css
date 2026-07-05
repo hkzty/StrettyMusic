@@ -731,6 +731,14 @@
       width: 100%;
     }
 
+    .spotify-code {
+      width: 100%;
+      max-width: 220px;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+      margin: 0.4rem 0;
+    }
+
     .release-body,
     .merch-body,
     .coming-body,
